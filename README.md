@@ -23,7 +23,7 @@ docker build -t hadoop-hive-spark-dev ./dev
 Then to run everyting:
 
 ```
-docker compose -f .\docker-compose.yml up
+docker compose -f docker-compose.yml up
 ```
 
 ## Access interfaces with the following URL
