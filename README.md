@@ -13,7 +13,7 @@
 To deploy the cluster, run once :
 ```
 docker build -t hadoop-hive-spark-base ./base
-docker build -t hadoop-hive-spa  rk-master ./master
+docker build -t hadoop-hive-spark-master ./master
 docker build -t hadoop-hive-spark-worker ./worker
 docker build -t hadoop-hive-spark-history ./history
 docker build -t hadoop-hive-spark-jupyter ./jupyter
