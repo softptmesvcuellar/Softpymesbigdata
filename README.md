@@ -10,10 +10,20 @@
 
 ## Quick Start
 
-To deploy the cluster, run:
+To deploy the cluster, run once :
 ```
-make
-docker-compose up
+docker build -t hadoop-hive-spark-base ./base
+docker build -t hadoop-hive-spa  rk-master ./master
+docker build -t hadoop-hive-spark-worker ./worker
+docker build -t hadoop-hive-spark-history ./history
+docker build -t hadoop-hive-spark-jupyter ./jupyter
+docker build -t hadoop-hive-spark-dev ./dev
+```
+
+Then to run everyting:
+
+```
+docker compose -f .\docker-compose.yml up
 ```
 
 ## Access interfaces with the following URL
